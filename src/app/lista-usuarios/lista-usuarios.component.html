@@ -1,0 +1,27 @@
+<h2 class="text-center">Lista de Tareas con usuario</h2>
+
+
+<!-- Content here -->
+<table class="table table-bordered">
+
+    <thead class="table-dark">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>E Mail</th>
+            <th>Tarea</th>
+            <th>Tipo</th>
+            <th>Prioridad</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let usuario of usuarios">
+            <th>{{usuario.nombre}}</th>
+            <th>{{usuario.apellido}}</th>
+            <th>{{usuario.email}}</th>
+            <th>{{usuario.tarea}}</th>
+            <th>{{usuario.tipo}}</th>
+            <th>{{usuario.prioridad}}</th>
+        </tr>
+    </tbody>
+</table>
